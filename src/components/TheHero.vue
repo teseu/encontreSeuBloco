@@ -13,7 +13,9 @@
 					carnaval de 2023
 				</div>
 			</div>
-			<div class="form__container bg-white w-2/3 mx-auto rounded-lg py-8 mb-16">
+			<div
+				class="form__container bg-white dark:bg-zinc-800 w-2/3 mx-auto rounded-lg py-8 mb-16"
+			>
 				<form class="form flex justify-around">
 					<div class="input-container">
 						<input
