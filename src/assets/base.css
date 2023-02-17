@@ -47,7 +47,7 @@
   --section-gap: 160px;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
     --color-background: var(--bg-externo);
     --color-background-soft: var(--vt-c-black-soft);
@@ -102,17 +102,29 @@ main .content {
   background-position: left, right;
   background-repeat: no-repeat;
   padding-left: 2rem;
-
+  
 }
 
 .input-container select {
   background-color: var(--hero-background);
+  color: var(--placeholder);
 }
 
 .input-container input {
   background-color: var(--hero-background);
   background-image: url(@/assets/img/search.svg);
   background-position: left;
+  background-repeat: no-repeat;
+  padding-left: 2rem;
+  color: var(--placeholder);
+}
+
+.input-container input::placeholder {
+  color: var(--placeholder);
+}
+
+.location {
+  background-image: url(@/assets/img/location.svg);
   background-repeat: no-repeat;
   padding-left: 2rem;
 }

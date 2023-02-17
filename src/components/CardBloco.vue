@@ -1,14 +1,23 @@
+<script setup lang="ts">
+defineProps({
+	img: String,
+	alt: String,
+	title: String,
+	desc: String,
+	location: String,
+})
+</script>
+
 <template>
-	<div>
-		<img src="../assets/img/bloco1.png" alt="man with a top hat" />
-		<div class="block__title">O Python do vovô não sobe mais</div>
-		<div class="block__desc">
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fugit earum
-			iusto assumenda repellendus laboriosam atque molestias magni totam,
-			suscipit, saepe temporibus voluptatibus exercitationem tempora recusandae,
-			neque cupiditate praesentium cumque.
+	<div class="border border-zinc-200 rounded-lg">
+		<img class="mb-3 rounded-t-lg" :src="img" :alt="alt" />
+		<div class="px-6 py-2">
+			<div class="text-lg font-semibold">{{ title }}</div>
+			<div class="block__desc">
+				{{ desc }}
+			</div>
+			<i></i>
+			<div class="location mt-4 mb-2">{{ location }}</div>
 		</div>
-		<i></i>
-		<div class="location">São Paulo - SP</div>
 	</div>
 </template>
