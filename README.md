@@ -1,6 +1,6 @@
 # EncontreSeuBloco
 
-## Desafio #boraCodar #6
+## Desafio #boraCodar #7
 
 ### Dados mockados
 Os dados dos blocos vem de um json, com instruções para rodar ao final desse README
