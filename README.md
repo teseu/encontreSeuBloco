@@ -1,25 +1,31 @@
 # EncontreSeuBloco
 
-This template should help get you started developing with Vue 3 in Vite.
+## Desafio #boraCodar #6
 
-## Recommended IDE Setup
+Dark mode incluído, abaixo o light
+![light mode](lightMode.png)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+agora o dark
+![dark mode](darkMode.png)
 
-## Type Support for `.vue` Imports in TS
+Está setado para as preferências do SO de quem visita a pág, mas isso pode ser alterado facilmente, como foi o caso para tirar os screenshots.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+2 alterações:
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+1 - no arquivo base.css na linha 
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+```css
+@media (prefers-color-scheme: dark)
+```
+altere conforme a preferência
 
-## Customize configuration
+2 - no arquivo tailwind.config.js 
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+```js
+darkMode: 'class',
+```
+descomente para usar as preferências do **SO** e vice versa
+
 
 ## Project Setup
 
