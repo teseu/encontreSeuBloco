@@ -4,9 +4,9 @@ import CardBloco from "@/components/CardBloco.vue"
 </script>
 
 <template>
-  <Hero />
 
-  <main>
+  <main class="w-[1440px] h-[532px] mx-auto">
+    <Hero />
     <CardBloco />
   </main>
 </template>
