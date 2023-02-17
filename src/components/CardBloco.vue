@@ -11,7 +11,7 @@ defineProps({
 <template>
 	<div class="border border-zinc-200 rounded-lg">
 		<img class="mb-3 rounded-t-lg" :src="img" :alt="alt" />
-		<div class="px-6 py-2">
+		<div class="flex flex-col justify-between px-6 py-2">
 			<div class="text-lg font-semibold">{{ title }}</div>
 			<div class="block__desc">
 				{{ desc }}
