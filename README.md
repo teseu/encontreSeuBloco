@@ -2,6 +2,9 @@
 
 ## Desafio #boraCodar #6
 
+### Dados mockados
+Os dados dos blocos vem de um json, com instruções para rodar ao final desse README
+
 Dark mode incluído, abaixo o light
 ![light mode](lightMode.png)
 
@@ -35,8 +38,14 @@ npm install
 
 ### Compile and Hot-Reload for Development
 
+#### In one terminal to view the app
 ```sh
 npm run dev
+```
+
+#### In other terminal to access mockup data
+```sh
+npm run jserver
 ```
 
 ### Type-Check, Compile and Minify for Production
